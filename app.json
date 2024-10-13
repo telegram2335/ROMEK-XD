@@ -1,10 +1,10 @@
 {
-  "name": "whatsapp-bot (ROMEK-XD-BOT)",
+  "name": "whatsapp-bot (ROMEK-XD)",
   "description": " Whatsapp bot.",
   "keywords": [
     "whatsapp bot"
   ],
-  "repository": "https://github.com/watsonxdboy/ROMEK-XD-BOT",
+  "repository": "https://github.com/ROMEKTRICKS/ROMEK-XD",
   "stack": "container",
   "env": { 
       "SESSION_ID": {
