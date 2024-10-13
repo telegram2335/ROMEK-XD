@@ -1,5 +1,16 @@
 
 ## `⭐Star This Repo⭐`
+
+
+
+
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=FF0069&center=true&width=970&height=100&lines=𝗜𝗧𝗦%20🐼𝐑𝐎𝐌𝐄𝐊 𝐗𝐃🐠;%20𝗠𝗨𝗟𝗧𝗜-𝗗𝗘𝗩𝗜𝗖𝗘%20𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣%20𝗕𝗢𝗧;%20𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗗%20𝗕𝗬%20𝐑𝐎𝐌𝐄𝐊 𝐗𝐃%20𝗫𝗗)
+<p align="center">
+
+# 🐼𝐑𝐎𝐌𝐄𝐊 𝐗𝐃🐠 
+
+<p align="center">
+  <a href="https://github.com/ROMEKTRICKS"><img src="http://readme-typing-svg.herokuapp.com?color=red&center=true&vCenter=true&multiline=false&lines=𝐑𝐎𝐌𝐄𝐊 𝐗𝐃-+BOT+MultiDevice;Developed+by+Ethix~Xsid+and+recode+𝐑𝐎𝐌𝐄𝐊 𝐗𝐃,;Give+star+and+forks+this+Repo+🌟" alt="𝐑𝐎𝐌𝐄𝐊 𝐗𝐃Readme"></a>
 </p>
 ## 🚀 Getting Started
 
