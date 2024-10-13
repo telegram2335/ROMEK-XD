@@ -1,17 +1,6 @@
 
 ## `⭐Star This Repo⭐`
 
-
-
-
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=FF0069&center=true&width=970&height=100&lines=𝗜𝗧𝗦%20🐼𝐑𝐎𝐌𝐄𝐊 𝐗𝐃🐠;%20𝗠𝗨𝗟𝗧𝗜-𝗗𝗘𝗩𝗜𝗖𝗘%20𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣%20𝗕𝗢𝗧;%20𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗗%20𝗕𝗬%20𝐑𝐎𝐌𝐄𝐊 𝐗𝐃%20𝗫𝗗)
-<p align="center">
-
-# 🐼𝐑𝐎𝐌𝐄𝐊 𝐗𝐃🐠 
-
-<p align="center">
-  <a href="https://github.com/ROMEKTRICKS"><img src="http://readme-typing-svg.herokuapp.com?color=red&center=true&vCenter=true&multiline=false&lines=𝐑𝐎𝐌𝐄𝐊 𝐗𝐃-+BOT+MultiDevice;Developed+by+Ethix~Xsid+and+recode+𝐑𝐎𝐌𝐄𝐊 𝐗𝐃,;Give+star+and+forks+this+Repo+🌟" alt="𝐑𝐎𝐌𝐄𝐊 𝐗𝐃Readme"></a>
-</p>
 ## 🚀 Getting Started
 
 To get started with 🐼𝐑𝐎𝐌𝐄𝐊 𝐗𝐃🐠, follow these steps:
@@ -20,7 +9,7 @@ To get started with 🐼𝐑𝐎𝐌𝐄𝐊 𝐗𝐃🐠, follow these steps:
 
 Start by forking this repository to your own GitHub account. Click the button below to fork:
 
-<a href='https://github.com/watsonxdboy/WATSON-XD-BOT/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork This Repo-black?style=for-the-badge&logo=git&logoColor=white'/></a>
+<a href='https://github.com/ROMEKTRICKS/ROMEK-XD/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork This Repo-black?style=for-the-badge&logo=git&logoColor=white'/></a>
 
 ### 2. 🌟 Get Session ID via Pair Code 🌟
 
@@ -73,7 +62,7 @@ You can also deploy the bot directly on your Android device using Termux. Here�
    Clone the forked repository using the following command:
 
    ```bash
-   git clone https://github.com/watsonxdboy/WATSON-XD-BOT.git
+   git clone https://github.com/ROMEKTRICKS/ROMEK-XD.git
    ```
 
 4. **Navigate to the Project Directory:**
@@ -81,7 +70,7 @@ You can also deploy the bot directly on your Android device using Termux. Here�
    Change into the project directory:
 
    ```bash
-   cd WATSON-XD-BOT
+   cd ROMEK-XD
    ```
 
 5. **Set the `SESSION_ID` in the `.env` File:**
@@ -131,13 +120,11 @@ You can also deploy the bot directly on your Android device using Termux. Here�
 ## 😻 Join WhatsApp Group, Channel, and Contact the Owner
 
 Stay connected with the latest updates and community by joining our official WhatsApp group and channel. You can also contact the owner directly.
+.
 
-- **Owner WhatsApp Number:** +263781330745
-  - *Note:* Please save the owner's number in your contacts before sending a message.
+### 🎉🎉DON'T FORGET TO CHECK ROMEK-XD 🎉🎉
 
-### 🎉🎉DON'T FORGET TO CHECK WATSON-XD-BOT 🎉🎉
-
-- **WhatsApp Channel:** [Join Here](https://whatsapp.com/channel/0029VajjzuB9sBI890YffB1b)
+- **WhatsApp Channel:** [Join Here](https://chat.whatsapp.com/JhKObTTRS569iBWCDtEVDG)
 
 - **WhatsApp Group:** [Join Here](https://chat.whatsapp.com/E0a2bl9wHYlCHuL35WBR88)
 - 
