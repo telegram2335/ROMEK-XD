@@ -62,7 +62,7 @@ You can also deploy the bot directly on your Android device using Termux. Hereâ€
    Clone the forked repository using the following command:
 
    ```bash
-   git clone https://github.com/ROMEKTRICKS/ROMEK-XD.git
+   git clone [https://github.com/ROMEKTRICKS/ROMEK-XD.git]
    ```
 
 4. **Navigate to the Project Directory:**
