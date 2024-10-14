@@ -45,8 +45,8 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
           {
             name: "cta_url",
             buttonParamsJson: JSON.stringify({
-              display_text: "sʜᴏᴡ 💜 ғᴏʀ 𝚆𝙰𝚃𝚂𝙾𝙽-xᴅ-ʙᴏᴛ",
-              url: `https://whatsapp.com/channel/0029VajjzuB9sBI890YffB1b`
+              display_text: "SHOW 💜 FOR ROMEK-XD",
+              url: `https://whatsapp.com/channel/0029VakaPzeD38CV78dbGf0e`
             })
           },
           {
