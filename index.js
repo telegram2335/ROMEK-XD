@@ -83,7 +83,7 @@ async function start() {
                     const msg = await store.loadMessage(key.remoteJid, key.id);
                     return msg.message || undefined;
                 }
-                return { conversation: "ROMEK-XD-BOT whatsapp user bot" };
+                return { conversation: "ROMEK-XD whatsapp user bot" };
             }
         });
 
@@ -95,8 +95,20 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("😃 Integration Successful️ ✅"));
-                    Matrix.sendMessage(Matrix.user.id, { text: `😃 Integration Successful️ ✅` });
+                    console.log(chalk.green("🐼 ROMEK-XD SESSION IS SUCCESSFULLY🐼                                 *🐼JOIN MY CHANNEL🐼*              https://whatsapp.com/channel/0029VakaPzeD38CV78dbGf0e.                               *🐼BOT REPO🐼*                      https://github.com/ROMEKTRICKS/ROMEK-XD                                                           *🐼MY OWNER🐼*                    Wa.me/919341378016                                                   ")); 
+
+
+                    Matrix.sendMessage(Matrix.user.id, { text: `*┏━━━━━━━━━━━━━━
+┃ROMEK-XD SESSION IS 
+┃SUCCESSFULLY
+┃CONNECTED ✅🔥
+┗━━━━━━━━━━━━━━━*
+❶ || Creator = 𖥘⚡ ROMEK-XD ⚡𖥘
+❷ || https://whatsapp.com/channel/0029VakaPzeD38CV78dbGf0e
+❸ || Owner = https://wa.me/919341378016
+❺ || Bot Repo = https://github.com/ROMEKTRICKS/ROMEK-XD
+❻ || YouTube = https://youtube.com/@romek-xd9 
+©2024-2099 *ROMEKTRICKS*   ` });
                     initialConnection = false;
                 } else {
                     console.log(chalk.blue("♻️ Connection reestablished after restart."));
