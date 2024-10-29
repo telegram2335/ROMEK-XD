@@ -1,8 +1,7 @@
-<p align="center">
-<a href="https://git.io/typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=EB+Garamond&weight=800&size=28&duration=4000&pause=1000&random=false&width=435&lines=%E2%80%BC%F0%9D%90%9C%F0%9D%90%9E%F0%9D%90%A8%F0%9D%90%A7%F0%9D%90%A8%F0%9D%90%A5+%F0%9D%90%9C%F0%9D%90%A2+%F0%9D%90%93%F0%9D%90%A2%F0%9D%90%9E%F0%9D%90%AA%F0%9D%90%9C%F0%9D%90%A8%F0%9D%90%A7-𝐗𝐃-𝐌𝐔𝐋𝐓𝐈-𝐃𝐄𝐕𝐈𝐂𝐄+%F0%9D%90%9C%F0%9D%90%A2%F0%9D%90%A8%F0%9D%90%9C%F0%9D%90%AA%F0%9D%90%9C+%F0%9D%90%AA%F0%9D%90%9C%F0%9D%90%9E%F0%9D%90%9C;𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃+%F0%9D%90%9C%F0%9D%90%AA+%F0%9D%90%9C%F0%9D%90%9E%F0%9D%90%9C-𝐗𝐃..." alt="Typing SVG" />
-</a>
-</p>
+<br>
+ </p>
+    <p align="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=EB+Red=800&size=28&duration=4000&pause=1000&random=false&width=435&lines=𝐖𝐄𝐋𝐂𝐎𝐌𝐄+𝐓𝐎+𝐑𝐎𝐌𝐄𝐊-𝐗𝐃-𝐌𝐔𝐋𝐓𝐈-𝐃𝐄𝐕𝐈𝐂𝐄+𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏+𝐁𝐎𝐓;𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃+𝐁𝐘+𝐑𝐎𝐌𝐄𝐊-𝐗𝐃...❤️" alt="Typing SVG" /></a>
 
 </p>
 
