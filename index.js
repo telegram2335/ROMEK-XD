@@ -52,13 +52,13 @@ async function downloadSessionData() {
         console.error('Please add your session to SESSION_ID env !!');
         return false;
     }
-    const sessdata = config.SESSION_ID.split("Ethix-MD&")[1];
+    const sessdata = config.SESSION_ID.split("ROMEK-XD&")[1];
     const url = `https://pastebin.com/raw/${sessdata}`;
     try {
         const response = await axios.get(url);
         const data = typeof response.data === 'string' ? response.data : JSON.stringify(response.data);
         await fs.promises.writeFile(credsPath, data);
-        console.log("🔒 Session Successfully Loaded !!");
+        console.log("🔒 Session Successfully Loaded📱 !!");
         return true;
     } catch (error) {
        // console.error('Failed to download session data:', error);
@@ -70,7 +70,7 @@ async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
         const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`🤖 ROMEK-XD using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        console.log(`👨‍💻 ROMEK-XD using WA v${version.join('.')}, isLatest: ${isLatest}`);
         
         const Matrix = makeWASocket({
             version,
@@ -95,20 +95,8 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("🐼 ROMEK-XD SESSION IS SUCCESSFULLY🐼                                 *🐼JOIN MY CHANNEL🐼*              https://whatsapp.com/channel/0029VakaPzeD38CV78dbGf0e.                               *🐼BOT REPO🐼*                      https://github.com/ROMEKTRICKS/ROMEK-XD                                                           *🐼MY OWNER🐼*                    Wa.me/919341378016                                                   ")); 
-
-
-                    Matrix.sendMessage(Matrix.user.id, { text: `*┏━━━━━━━━━━━━━━
-┃ROMEK-XD SESSION IS 
-┃SUCCESSFULLY
-┃CONNECTED ✅🔥
-┗━━━━━━━━━━━━━━━*
-❶ || Creator = 𖥘⚡ ROMEK-XD ⚡𖥘
-❷ || https://whatsapp.com/channel/0029VakaPzeD38CV78dbGf0e
-❸ || Owner = https://wa.me/919341378016
-❺ || Bot Repo = https://github.com/ROMEKTRICKS/ROMEK-XD
-❻ || YouTube = https://youtube.com/@romek-xd9 
-©2024-2099 *ROMEKTRICKS*   ` });
+                    console.log(chalk.green("🥇ROMEK-XD CONNECTED Successful️ ✅"));
+                    Matrix.sendMessage(Matrix.user.id, { text: `🥏ROMEK-XD CONNECTED Successful️ ✅` });
                     initialConnection = false;
                 } else {
                     console.log(chalk.blue("♻️ Connection reestablished after restart."));
@@ -155,7 +143,7 @@ async function init() {
     } else {
         const sessionDownloaded = await downloadSessionData();
         if (sessionDownloaded) {
-            console.log("🔒 Session downloaded, starting bot.");
+            console.log("📱 Session downloaded, starting bot.");
             await start();
         } else {
             console.log("No session found or downloaded, QR code will be printed for authentication.");
