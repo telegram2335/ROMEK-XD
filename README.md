@@ -2,20 +2,17 @@
  </p>
     <p align="center">
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?f
-<p style="text-align: center;">
-  <span style="color: red;">𝐖𝐄𝐋𝐂𝐎𝐌𝐄</span> 
-  <span style="color: blue;">𝐓𝐎</span> 
-  <span style="color: green;">𝐑𝐎𝐌𝐄𝐊-𝐗𝐃-𝐌𝐔𝐋𝐓𝐈-𝐃𝐄𝐕𝐈𝐂𝐄</span> 
-  <span style="color: orange;">𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏</span> 
-  <span style="color: purple;">𝐁𝐎𝐓;</span> 
-  <span style="color: pink;">𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃</span> 
-  <span style="color: brown;">𝐁𝐘</span> 
-  <span style="color: teal;">𝐑𝐎𝐌𝐄𝐊-𝐗𝐃...❤️</span>
+<p align="center">
+  <span style="color: #FF5733;">𝐖𝐄𝐋𝐂𝐎𝐌𝐄 </span>
+  <span style="color: #33FF57;">𝐓𝐎 </span>
+  <span style="color: #3357FF;">𝐑𝐎𝐌𝐄𝐊-𝐗𝐃-𝐌𝐔𝐋𝐓𝐈-𝐃𝐄𝐕𝐈𝐂𝐄 </span>
+  <span style="color: #FF33A6;">𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 </span>
+  <span style="color: #FFC300;">𝐁𝐎𝐓; </span>
+  <span style="color: #DAF7A6;">𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃 </span>
+  <span style="color: #C70039;">𝐁𝐘 </span>
+  <span style="color: #900C3F;">𝐑𝐎𝐌𝐄𝐊-𝐗𝐃...</span>
 </p>
-```
 
-इस कोड को अपने वेब पेज में डालें, और यह आपके वेलकम मैसेज को विभिन्न रंगों में प्रदर्शित करेगा। अगर आपको और सहायता चाहिए, तो बताएं!
-  
 <div align="center">
 </p
 
