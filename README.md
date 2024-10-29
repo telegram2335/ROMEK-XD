@@ -1,17 +1,7 @@
 <br>
  </p>
     <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=EB+Garamond&weight=800&size=28&duration=4000&pause=1000&random=false&width=435&lines=<p align="center">
-  <span style="color: #FF5733;">𝐖𝐄𝐋𝐂𝐎𝐌𝐄 </span>
-  <span style="color: #33FF57;">𝐓𝐎 </span>
-  <span style="color: #3357FF;">𝐑𝐎𝐌𝐄𝐊-𝐗𝐃-𝐌𝐔𝐋𝐓𝐈-𝐃𝐄𝐕𝐈𝐂𝐄 </span>
-  <span style="color: #FF33A6;">𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 </span>
-  <span style="color: #FFC300;">𝐁𝐎𝐓; </span>
-  <span style="color: #DAF7A6;">𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃 </span>
-  <span style="color: #C70039;">𝐁𝐘 </span>
-  <span style="color: #900C3F;">𝐑𝐎𝐌𝐄𝐊-𝐗𝐃...</span>
-</p>
-...❤️" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=EB+Garamond&weight=800&size=28&duration=4000&pause=1000&random=false&width=435&lines=𝐖𝐄𝐋𝐂𝐎𝐌𝐄+𝐓𝐎+𝐑𝐎𝐌𝐄𝐊-𝐗𝐃-𝐌𝐔𝐋𝐓𝐈-𝐃𝐄𝐕𝐈𝐂𝐄+𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏+𝐁𝐎𝐓;𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃+𝐁𝐘+𝐑𝐎𝐌𝐄𝐊-𝐗𝐃...❤️" alt="Typing SVG" /></a>
 
 <div align="center">
 </p
