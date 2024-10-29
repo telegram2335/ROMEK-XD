@@ -1,9 +1,20 @@
 <br>
  </p>
     <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=EB+Garamond&weight=800&size=28&duration=4000&pause=1000&random=false&width=435&lines=𝐖𝐄𝐋𝐂𝐎𝐌𝐄+𝐓𝐎+𝐑𝐎𝐌𝐄𝐊-𝐗𝐃-𝐌𝐔𝐋𝐓𝐈-𝐃𝐄𝐕𝐈𝐂𝐄+𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏+𝐁𝐎𝐓;𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃+𝐁𝐘+𝐑𝐎𝐌𝐄𝐊-𝐗𝐃...❤️" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?f
+<p style="text-align: center;">
+  <span style="color: red;">𝐖𝐄𝐋𝐂𝐎𝐌𝐄</span> 
+  <span style="color: blue;">𝐓𝐎</span> 
+  <span style="color: green;">𝐑𝐎𝐌𝐄𝐊-𝐗𝐃-𝐌𝐔𝐋𝐓𝐈-𝐃𝐄𝐕𝐈𝐂𝐄</span> 
+  <span style="color: orange;">𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏</span> 
+  <span style="color: purple;">𝐁𝐎𝐓;</span> 
+  <span style="color: pink;">𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃</span> 
+  <span style="color: brown;">𝐁𝐘</span> 
+  <span style="color: teal;">𝐑𝐎𝐌𝐄𝐊-𝐗𝐃...❤️</span>
+</p>
+```
 
- 
+इस कोड को अपने वेब पेज में डालें, और यह आपके वेलकम मैसेज को विभिन्न रंगों में प्रदर्शित करेगा। अगर आपको और सहायता चाहिए, तो बताएं!
   
 <div align="center">
 </p
@@ -73,11 +84,11 @@
 
 
 
-   <a href="https://github.com/ROMEKTRICKS/"><img src="https://telegra.ph/file/c718b67d351c1190e285b.jpg" width=80 height=80></a>   
+   <a href="https://github.com/ROMEKTRICKS/"><img src="https://files.catbox.moe/fgpxbl.jpg" width=80 height=80></a>   
 
 |**[`ROMEK-XD`](https://github.com/ROMEKTRICKS)**|
 
-## 👑 `ROMEK-XD BOT OWNER`👨‍💻 
+## 👑 `𝐑𝐎𝐌𝐄𝐊-𝐗𝐃 𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑`👨 
 
  <br>
  </p>
