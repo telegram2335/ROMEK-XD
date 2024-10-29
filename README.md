@@ -1,141 +1,88 @@
+<br>
+ </p>
+    <p align="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=EB+Garamond&weight=800&size=28&duration=4000&pause=1000&random=false&width=435&lines=𝐖𝐄𝐋𝐂𝐎𝐌𝐄+𝐓𝐎+𝐑𝐎𝐌𝐄𝐊-𝐗𝐃-𝐌𝐔𝐋𝐓𝐈-𝐃𝐄𝐕𝐈𝐂𝐄+𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏+𝐁𝐎𝐓;𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃+𝐁𝐘+𝐑𝐎𝐌𝐄𝐊-𝐗𝐃...❤️" alt="Typing SVG" /></a>
 
-## `⭐Star This Repo⭐`
+ 
+  
+<div align="center">
+</p
 
-## 🚀 Getting Started
+<hr>
 
-To get started with 🐼𝐑𝐎𝐌𝐄𝐊 𝐗𝐃🐠, follow these steps:
+<hr>
+<p align="center">
+<a href="https://github.com/ROMEKTRICKS/ROMEK-XD">
+    <img src="https://files.catbox.moe/4y72vl.jpg">
+  </a>
 
-### 1. Fork This Repository
 
-Start by forking this repository to your own GitHub account. Click the button below to fork:
+    
+
+![forks](https://img.shields.io/github/forks/ROMEKTRICKS/ROMEK-XD?label=Forks&style=social)
+
+![stars](https://img.shields.io/github/stars/ROMEKTRICKS/ROMEK-XD?style=social)
+
+
+
+
+<a href="https://https://whatsapp.com/channel/0029VakaPzeD38CV78dbGf0e"><img src="https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F%E2%80%8D%20Join%20Our%20WhatsApp%20Channel%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB-green" alt="📎 Join Our WhatsApp Channel" width="300"></a>
+
+
+
+## MY YT CHANNEL
+
+[![Youtube](https://telegra.ph/file/eebe86c26e98ffeae39ea.jpg)](https://youtube.com/@romek-xd9) 
+
+</details>
+
+
+
+
+
+<hr>
+
+<hr>
+1. FORK THIS REPO
+
 
 <a href='https://github.com/ROMEKTRICKS/ROMEK-XD/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork This Repo-black?style=for-the-badge&logo=git&logoColor=white'/></a>
 
-### 2. 🌟 Get Session ID via Pair Code 🌟
 
-You'll need a session ID to run the bot. Click the button below to obtain your session ID:
+2. ## DEPLOY BY SESSION ID (WHATSAPP LOG WITH PAIR CODE)
 
-<a href='https://professional-kitty-goutammallick516-86803e18.koyeb.app' target="_blank"><img alt='Get Session ID' src='https://img.shields.io/badge/Click here to get your session id-black?style=for-the-badge&logo=opencv&logoColor=red'/></a>
+<a href='https://replit.com/@/https://replit.com/@salmanikhani426/ROMEK-XD-PAIR-1' target="_blank"><img alt='Get Session ID' src='https://img.shields.io/badge/%F0%9F%9A%80%EF%B8%8F%E2%80%8D%201-OUR%F0%9F%93%8B%20%20PAIR%20CODE%20WEB%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB-yellow' width="400" height="50" alt="Deploy bot"/></a>
 
-## 🤩 Deployment Options 🤩
+<hr>
+<a href='https://replit.com/@salmanikhani426/ROMEK-XD-PAIR' target="_blank"><img alt='Session ID WEB' src='https://img.shields.io/badge/%F0%9F%9A%80%EF%B8%8F%E2%80%8D%202-OUR%F0%9F%93%8B%20%20PAIR%20CODE%20WEB%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB-RED' width="400" height="50" alt="Deploy bot"/></a>
 
-You can deploy the ROMEK-XD bot using two methods: **Heroku** or **Termux**. Choose the method that suits you best.
+<hr>
+<hr>
 
-### Deploy to Heroku 
+## DEPLOYMENT METHODS
+3. ## Deploy to Koyeb ↓
 
-Deploying the bot to Heroku is simple and straightforward. Follow these steps:
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?name=ROMEK-XD&type=git&repository=ROMEKTRICKS%2FROMEK-XD&branch=ROMEK-XD&builder=dockerfile&env%5BAUTO_REACT%5D=true&env%5BAUTO_STATUS_SEEN%5D=true&env%5BSESSION_ID%5D=&ports=8000%3Bhttp%3B%2F)
 
-1. **Create a Heroku Account:**
+4. ## Deploy to RENDER ↓
 
-   If you don't already have a Heroku account, create one by clicking the button below:
+<a href="https://dashboard.render.com/" target="blank"><img align="center" src="https://telegra.ph/file/c15e952f017c10e12f431.jpg" width="100" height="20" alt="Deploy bot"/></a>
 
-   <a href='https://signup.heroku.com/' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=heroku&logoColor=red'/></a>
+5. ## Deploy to HEROKU
 
-2. **Deploy the Bot:**
+[![Deploy to HEROKU](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/ROMEKTRICKS/ROMEK-XD)
 
-   Once your Heroku account is ready, deploy the bot by clicking the button below:
 
-   <a href='https://heroku.com/deploy' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=red'/></a>
 
-### Deploy to Termux
+   <a href="https://github.com/ROMEKTRICKS/"><img src="https://telegra.ph/file/c718b67d351c1190e285b.jpg" width=80 height=80></a>   
 
-You can also deploy the bot directly on your Android device using Termux. Here’s how:
+|**[`ROMEK-XD`](https://github.com/ROMEKTRICKS)**|
 
-1. **Install Termux:**
+## 👑 `ROMEK-XD BOT OWNER`👨‍💻 
 
-   If you don't have Termux installed, download it from the Google Play Store or F-Droid.
-
-   - [Google Play Store](https://play.google.com/store/apps/details?id=com.termux)
-   - [F-Droid](https://f-droid.org/en/packages/com.termux/)
-
-2. **Update and Install Required Packages:**
-
-   Open Termux and run the following commands to update packages and install required dependencies:
-
-   ```bash
-   pkg update && pkg upgrade
-   pkg install git nodejs -y
-   ```
-
-3. **Clone the Repository:**
-
-   Clone the forked repository using the following command:
-
-   ```bash
-   git clone https://github.com/ROMEKTRICKS/ROMEK-XD.git
-   ```
-
-4. **Navigate to the Project Directory:**
-
-   Change into the project directory:
-
-   ```bash
-   cd ROMEK-XD
-   ```
-
-5. **Set the `SESSION_ID` in the `.env` File:**
-
-   To set the `SESSION_ID`, you need to create or edit the `.env` file in the project directory.
-
-   - **Create/Edit the `.env` File:**
-
-     Open (or create) the `.env` file using a text editor like `nano`:
-
-     ```bash
-     nano .env
-     ```
-
-   - **Add the `SESSION_ID` Variable:**
-
-     Add the following line to the `.env` file:
-
-     ```bash
-     SESSION_ID='your-session-id-here'
-     ```
-
-     Replace `'your-session-id-here'` with the actual session ID you obtained.
-
-   - **Save and Exit:**
-
-     If using `nano`, save the changes by pressing `CTRL + X`, then `Y`, and then `Enter` to exit.
-
-6. **Install Node Modules:**
-
-   Install the required Node.js modules:
-
-   ```bash
-   npm install
-   ```
-
-7. **Start the Bot:**
-
-   Finally, start the bot with the following command:
-
-   ```bash
-   node .
-   ```
-
-   Make sure to keep Termux open to maintain the bot's operation.
-
-## 😻 Join WhatsApp Group, Channel, and Contact the Owner
-
-Stay connected with the latest updates and community by joining our official WhatsApp group and channel. You can also contact the owner directly.
-.
-
-### 🎉🎉DON'T FORGET TO CHECK ROMEK-XD 🎉🎉
-
-- **WhatsApp Channel:** [Join Here](https://chat.whatsapp.com/JhKObTTRS569iBWCDtEVDG)
-
-- **WhatsApp Group:** [Join Here](https://chat.whatsapp.com/E0a2bl9wHYlCHuL35WBR88)
-- 
-## DON'T FORGET TO TO BUY ETHIX COFFEE AND BOT UPDATES 🎉🎉
-- **Donate:** [Buy Me A Coffee](buymeacoffee.com/ethixbhai)
-- and check his bot ##🚀BOT🎉[https://github.com/Ethix-Xsid/Ethix-MD-V2)
-
-## ⚠️ Reminder
-
-- **Disclaimer:** This bot is not affiliated with `WhatsApp Inc.`. Use it at your own risk.
-- Misusing the bot may result in your `WhatsApp` account being banned. Note that you can only unban your account once.
-- I am not responsible for any bans or misuse of the bot. Please keep this warning in mind before proceeding.
-
----
+ <br>
+ </p>
+    <p align="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=EB+Garamond&weight=800&size=28&duration=4000&pause=1000&random=false&width=435&lines=THANKS+ALL+USE;MY+BOT+ROMEK-XD" alt="Typing SVG" /></a>
+<p>---
+README.MD FILE DONT COPY </p>
