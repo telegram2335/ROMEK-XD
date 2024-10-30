@@ -78,6 +78,11 @@
 
 ## 👑 `𝐑𝐎𝐌𝐄𝐊-𝐗𝐃 𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑`👨 
 
+
+## DON'T FORGET TO TO BUY ETHIX COFFEE AND BOT UPDATES 🎉🎉
+- **Donate:** [Buy Me A Coffee](buymeacoffee.com/ethixbhai)
+- and check his bot ##🚀BOT🎉[https://github.com/Ethix-Xsid/Ethix-MD-V2)
+
  <br>
  </p>
     <p align="center">
