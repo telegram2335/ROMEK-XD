@@ -1,7 +1,5 @@
-<br>
- </p>
-    <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=EB+Red=800&size=28&duration=4000&pause=1000&random=false&width=435&lines=𝐖𝐄𝐋𝐂𝐎𝐌𝐄+𝐓𝐎+𝐑𝐎𝐌𝐄𝐊-𝐗𝐃-𝐌𝐔𝐋𝐓𝐈-𝐃𝐄𝐕𝐈𝐂𝐄+𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏+𝐁𝐎𝐓;𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃+𝐁𝐘+𝐑𝐎𝐌𝐄𝐊-𝐗𝐃...❤️" alt="Typing SVG" /></a>
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=3F00FF&center=true&width=900&height=100&lines=𝐑𝐎𝐌𝐄𝐊%20-𝐗𝐃-;%20𝗠𝗨𝗟𝗧𝗜-𝗗𝗘𝗩𝗜𝗖𝗘%20𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣%20𝗕𝗢𝗧;%20𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗗%20𝗕𝗬%20𝐑𝐎𝐌𝐄𝐊%20𝐗𝐃..💖)
+<p align="center">
 
 </p>
 
