@@ -60,8 +60,7 @@
 ## DEPLOYMENT METHODS
 3. ## Deploy to Koyeb ↓
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?name=ROMEK-XD&type=git&repository=ROMEKTRICKS%2FROMEK-XD&branch=ROMEK-XD&builder=dockerfile&env%5BAUTO_REACT%5D=true&env%5BAUTO_STATUS_SEEN%5D=true&env%5BSESSION_ID%5D=&ports=8000%3Bhttp%3B%2F)
-
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?name=romek-xd&type=git&repository=ROMEKTRICKS%2FROMEK-XD&branch=main&builder=buildpack&env%5BAUTO_STATUS_REPLY%5D=true&env%5BSESSION_ID%5D=&env%5BAUTO_STATUS_SEEN%5D=true&env%5BAUTO_REACT%5D=true&ports=8000%3Bhttp%3B%2F)
 4. ## Deploy to RENDER ↓
 
 <a href="https://dashboard.render.com/" target="blank"><img align="center" src="https://telegra.ph/file/c15e952f017c10e12f431.jpg" width="100" height="20" alt="Deploy bot"/></a>
