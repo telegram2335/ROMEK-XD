@@ -58,7 +58,7 @@ async function downloadSessionData() {
         const response = await axios.get(url);
         const data = typeof response.data === 'string' ? response.data : JSON.stringify(response.data);
         await fs.promises.writeFile(credsPath, data);
-        console.log("🔒 Session Successfully Loaded📱 !!");
+        console.log("🔒 Session Successfully Loaded !!");
         return true;
     } catch (error) {
        // console.error('Failed to download session data:', error);
@@ -70,7 +70,7 @@ async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
         const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`👨‍💻 ROMEK-XD using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        console.log(`🤖 ROMEK-XD using WA v${version.join('.')}, isLatest: ${isLatest}`);
         
         const Matrix = makeWASocket({
             version,
@@ -95,8 +95,8 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("🥇ROMEK-XD CONNECTED Successful️ ✅"));
-                    Matrix.sendMessage(Matrix.user.id, { text: `🥏ROMEK-XD CONNECTED Successful️ ✅` });
+                    console.log(chalk.green("😃ROMEK-XD-CONNECTED Successful️✅ JION FOR MORE UPDATE🥏"));
+                    Matrix.sendMessage(Matrix.user.id, { text: `😃ROMEK-XD-CONNECTED Successful️✅ JION FOR MORE UPDATE🥏` });
                     initialConnection = false;
                 } else {
                     console.log(chalk.blue("♻️ Connection reestablished after restart."));
@@ -119,6 +119,7 @@ async function start() {
         Matrix.ev.on('messages.upsert', async (chatUpdate) => {
             try {
                 const mek = chatUpdate.messages[0];
+                console.log(mek);
                 if (!mek.key.fromMe && config.AUTO_REACT) {
                     console.log(mek);
                     if (mek.message) {
@@ -130,6 +131,27 @@ async function start() {
                 console.error('Error during auto reaction:', err);
             }
         });
+        
+        Matrix.ev.on('messages.upsert', async (chatUpdate) => {
+    try {
+        const mek = chatUpdate.messages[0];
+        const fromJid = mek.key.participant || mek.key.remoteJid;
+        if (!mek || !mek.message) return;
+        if (mek.key.fromMe) return;
+        if (mek.message?.protocolMessage || mek.message?.ephemeralMessage || mek.message?.reactionMessage) return; 
+        if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_STATUS_SEEN) {
+            await Matrix.readMessages([mek.key]);
+            
+            if (config.AUTO_STATUS_REPLY) {
+                const customMessage = config.STATUS_READ_MSG || '✅ Auto Status Seen Bot By ROMEK-XD';
+                await Matrix.sendMessage(fromJid, { text: customMessage }, { quoted: mek });
+            }
+        }
+    } catch (err) {
+        console.error('Error handling messages.upsert event:', err);
+    }
+});
+
     } catch (error) {
         console.error('Critical Error:', error);
         process.exit(1);
@@ -143,7 +165,7 @@ async function init() {
     } else {
         const sessionDownloaded = await downloadSessionData();
         if (sessionDownloaded) {
-            console.log("📱 Session downloaded, starting bot.");
+            console.log("🔒 Session downloaded, starting bot.");
             await start();
         } else {
             console.log("No session found or downloaded, QR code will be printed for authentication.");
