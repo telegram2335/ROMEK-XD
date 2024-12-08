@@ -5,11 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name Ethix-MD",
-    "stop": "pm2 stop Ethix-MD",
-    "restart": "pm2 restart Ethix-MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name ROMEK-XD",
+    "stop": "pm2 stop ROMEK-XD",
+    "restart": "pm2 restart ROMEK-XD"
   },
-  "keywords": ["ethix-md", "whatsapp-bot", "ROMEK-XD", "whatsapp md bot"],
+  "keywords": ["ROMEK-XD", "whatsapp-bot", "ROMEK-XD", "whatsapp md bot"],
   "author": "ROMEK-XD",
   "license": "ISC",
   "dependencies": {
@@ -40,7 +40,6 @@
     "jsqr": "^1.4.0",
     "libphonenumber": "^0.0.10",
     "moment-timezone": "^0.5.45",
-    "nayan-media-downloader": "^2.3.3",
     "node-cache": "^5.1.2",
     "node-cron": "^3.0.3",
     "node-fetch": "^3.3.2",
