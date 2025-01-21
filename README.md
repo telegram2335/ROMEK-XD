@@ -49,7 +49,7 @@
 
 2. ## DEPLOY BY SESSION ID (WHATSAPP LOG WITH PAIR CODE)
 
-<a href='https://pair-code-l9cp.onrender.com/' target="_blank"><img alt='Get Session ID' src='https://img.shields.io/badge/%F0%9F%9A%80%EF%B8%8F%E2%80%8D%201-OUR%F0%9F%93%8B%20%20PAIR%20CODE%20WEB%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB-yellow' width="400" height="50" alt="Deploy bot"/></a>
+<a href='https://moral-nert-romektricks-a02cb369.koyeb.app/?' target="_blank"><img alt='Get Session ID' src='https://img.shields.io/badge/%F0%9F%9A%80%EF%B8%8F%E2%80%8D%201-OUR%F0%9F%93%8B%20%20PAIR%20CODE%20WEB%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB-yellow' width="400" height="50" alt="Deploy bot"/></a>
 
 
 <hr>
