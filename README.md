@@ -23,7 +23,7 @@
 
 <p align="center">
   <a href="https://youtube.com/@romek-xd9">
-    <img src="https://telegra.ph/file/eebe86c26e98ffeae39ea.jpg" width="400">
+    <img src="https://telegra.ph/file/eebe86c26e98ffeae39ea.jpg" width="50">
   </a>
 </p>
 ---
