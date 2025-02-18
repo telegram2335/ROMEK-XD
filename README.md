@@ -1,14 +1,9 @@
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=3F00FF&center=true&width=900&height=100&lines=𝐑𝐎𝐌𝐄𝐊%20-𝐗𝐃;%20𝗠𝗨𝗟𝗧𝗜-𝗗𝗘𝗩𝗜𝗖𝗘%20𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣%20𝗕𝗢𝗧;%20𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗗%20𝗕𝗬%20𝐑𝐎𝐌𝐄𝐊%20𝐗𝐃..💖)
-<p align="center">
-
-
-𝐑𝐎𝐌𝐄𝐊-𝐗𝐃 | 𝗠𝗨𝗟𝗧𝗜-𝗗𝗘𝗩𝗜𝗖𝗘 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 𝗕𝗢𝗧
-
+<p align="center"> 
 <p align="center">
   <img src="https://files.catbox.moe/119585.jpg" width="250" alt="ROMEK-XD Logo"/>
 </p>
 ---
-
 <p align="center">
   <a href="https://github.com/ROMEKTRICKS/ROMEK-XD/fork">
     <img src="https://img.shields.io/github/forks/ROMEKTRICKS/ROMEK-XD?label=Forks&style=social" alt="GitHub Forks">
@@ -17,14 +12,7 @@
     <img src="https://img.shields.io/github/stars/ROMEKTRICKS/ROMEK-XD?style=social" alt="GitHub Stars">
   </a>
 </p>
----
-🎥 MY YOUTUBE CHANNEL
-<p align="center">
-  <a href="https://youtube.com/@romek-xd9">
-    <img src="https://telegra.ph/file/eebe86c26e98ffeae39ea.jpg" width="50">
-  </a>
-</p
----
+--
 🚀 DEPLOYMENT METHODS
 
 ✅ Fork This Repo
