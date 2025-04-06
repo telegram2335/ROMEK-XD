@@ -1,4 +1,4 @@
-import config from '../../config.cjs';
+import config from '../config.cjs';
 
 const linkgc = async (m, gss) => {
   try {
@@ -6,19 +6,19 @@ const linkgc = async (m, gss) => {
 const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
 const text = m.body.slice(prefix.length + cmd.length).trim();
 
-    const validCommands = ['link', 'grouplink'];
+    const validCommands = ['linkgc', 'grouplink'];
 
     if (!validCommands.includes(cmd)) return;
 
     if (!m.isGroup) {
-      return m.reply('*❌ THIS COMMAND CAN ONLY BE USED IN GROUPS.*');
+      return m.reply('*📛 THIS COMMAND CAN ONLY BE USED IN GROUPS.*');
     }
     const groupMetadata = await gss.groupMetadata(m.from);
     const botNumber = await gss.decodeJid(gss.user.id);
     const isBotAdmins = groupMetadata.participants.find(p => p.id === botNumber)?.admin;
 
     if (!isBotAdmins) {
-      return m.reply('*❌ BOT MUST BE AN ADMIN TO USE THIS COMMAND.*');
+      return m.reply('*📛 BOT MUST BE AN ADMIN TO USE THIS COMMAND.*');
     }
 
     const response = await gss.groupInviteCode(m.from);

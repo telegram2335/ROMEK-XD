@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import config from '../../config.cjs';
+import config from '../config.cjs';
 
 const fetchData = async (m, Matrix) => {
   const prefix = config.PREFIX;
@@ -23,7 +23,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
 
       const contentType = res.headers.get('content-type');
       if (!/text|json/.test(contentType)) {
-        await Matrix.sendMedia(m.from, url, 'file', '> Api Fetched From Ethix-MD', m);
+        await Matrix.sendMedia(m.from, url, 'file', '> Api Fetched From ROMEK-XD', m);
         return;
       }
 

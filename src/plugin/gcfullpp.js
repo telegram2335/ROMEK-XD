@@ -1,64 +1,74 @@
-import generateProfilePicture from '../generateProfilePicture.js'; 
-import { writeFile, unlink } from 'fs/promises';
-import config from '../../config.cjs';
+import { downloadMediaMessage } from '@whiskeysockets/baileys';
+import Jimp from 'jimp';
+import config from '../config.cjs';
 
-const setProfilePictureGroup = async (m, gss) => {
+const gcfullpp = async (m, sock) => {
   const prefix = config.PREFIX;
-const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-const text = m.body.slice(prefix.length + cmd.length).trim();
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
 
-  const validCommands = ['setppfullgroup', 'setfullprofilepicgc', 'fullppgc'];
+  if (cmd !== "gcfullpp") return;
 
-  if (validCommands.includes(cmd)) {
-    
-    if (!m.isGroup) return m.reply("*📛 THIS COMMAND CAN ONLY BE USED IN GROUPS*");
-    const groupMetadata = await gss.groupMetadata(m.from);
-    const participants = groupMetadata.participants;
-    const botNumber = await gss.decodeJid(gss.user.id);
-    const botAdmin = participants.find(p => p.id === botNumber)?.admin;
-    const senderAdmin = participants.find(p => p.id === m.sender)?.admin;
+  if (!m.isGroup) {
+    return m.reply("❌ *This command can only be used in group chats.*");
+  }
 
-    if (!botAdmin) return m.reply("*📛 BOT MUST BE AN ADMIN TO USE THIS COMMAND*");
-    if (!senderAdmin) return m.reply("*📛 YOU MUST BE AN ADMIN TO USE THIS COMMAND*");
-    if (!m.quoted || m.quoted.mtype !== 'imageMessage') {
-      return m.reply(`Send/Reply with an image to set your profile picture ${prefix + cmd}`);
+  const groupMetadata = await sock.groupMetadata(m.from);
+  const participant = groupMetadata.participants.find(p => p.id === m.sender);
+
+  if (!participant?.admin) {
+    return m.reply("❌ *Only group admins are allowed to use this command.*");
+  }
+
+  if (!m.quoted?.message?.imageMessage) {
+    return m.reply("⚠️ *Please reply to an image to set it as group profile picture.*");
+  }
+
+  await m.React("⏳");
+
+  try {
+    const media = await downloadMediaMessage(m.quoted, "buffer", {});
+    if (!media) {
+      await m.React("❌");
+      return m.reply("❌ *Failed to download image. Try again.*");
     }
 
-    try {
-      const media = await m.quoted.download(); // Download the media from the quoted message
-      if (!media) throw new Error('Failed to download media.');
+    const image = await Jimp.read(media);
+    if (!image) throw new Error("Invalid image format");
 
-      const filePath = `./${Date.now()}.png`;
-      await writeFile(filePath, media);
+    const size = Math.max(image.bitmap.width, image.bitmap.height);
+    const squareImage = new Jimp(size, size, 0x000000FF);
 
-      try {
-        const { img } = await generateProfilePicture(media); // Generate profile picture
-        await gss.query({
-          tag: 'iq',
-          attrs: {
-            to: m.from,
-            type: 'set',
-            xmlns: 'w:profile:picture'
-          },
-          content: [{
-            tag: 'picture',
-            attrs: {
-              type: 'image'
-            },
-            content: img
-          }]
-        });
-        m.reply('Profile picture updated successfully.');
-      } catch (err) {
-        throw err;
-      } finally {
-        await unlink(filePath); // Clean up the downloaded file
-      }
-    } catch (error) {
-      console.error('Error setting profile picture:', error);
-      m.reply('Error setting profile picture.');
-    }
+    const x = (size - image.bitmap.width) / 2;
+    const y = (size - image.bitmap.height) / 2;
+    squareImage.composite(image, x, y);
+
+    squareImage.resize(640, 640);
+    const buffer = await squareImage.getBufferAsync(Jimp.MIME_JPEG);
+
+    await sock.updateProfilePicture(m.from, buffer);
+    await m.React("✅");
+
+    return sock.sendMessage(
+      m.from,
+      {
+        text: `
+┌─〔 *GROUP FULL PP UPDATED* 〕─◉
+│
+│ ✅ *Successfully updated group display picture!*
+│ 👑 *By:* @${m.sender.split("@")[0]}
+│
+└─➤ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴍᴇᴋ-xᴅ*
+        `.trim(),
+        mentions: [m.sender]
+      },
+      { quoted: m }
+    );
+
+  } catch (error) {
+    console.error("Group Full PP Error:", error);
+    await m.React("❌");
+    return m.reply("❌ *Error occurred while setting group profile picture:* " + error.message);
   }
 };
 
-export default setProfilePictureGroup;
+export default gcfullpp;

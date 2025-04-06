@@ -1,30 +1,34 @@
 import axios from 'axios';
 import pkg, { prepareWAMessageMedia } from '@whiskeysockets/baileys';
 const { generateWAMessageFromContent, proto } = pkg;
-import config from '../../config.cjs';
+import config from '../config.cjs';
 
 const Lyrics = async (m, Matrix) => {
   const prefix = config.PREFIX;
-const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-const text = m.body.slice(prefix.length + cmd.length).trim();
+  const cmd = m.body.startsWith(prefix)
+    ? m.body.slice(prefix.length).split(' ')[0].toLowerCase()
+    : '';
+  const text = m.body.slice(prefix.length + cmd.length).trim();
 
   const validCommands = ['lyrics', 'lyric'];
 
   if (validCommands.includes(cmd)) {
-    if (!text) return m.reply(`Hello *_${m.pushName}_,*\n Here's Example Usage: _.lyrics Spectre|Alan Walker._`);
+    if (!text) {
+      return m.reply(`*Hello, ${m.pushName}*\n\n> _Example Usage:_\n\`\`\`.lyrics Spectre|Alan Walker\`\`\``);
+    }
 
     try {
-      await m.React('🔜');
-      await m.reply('A moment, *🧿𝗥𝗢𝗠𝗘𝗞-𝗫𝗗🪀* is generating your lyrics request...');
+      await m.React('🕘');
+      await m.reply('_Please wait, fetching your lyrics..._');
 
       if (!text.includes('|')) {
-        return m.reply('Please provide the song name and artist name separated by a "|", for example: Spectre|Alan Walker.');
+        return m.reply('⚠️ *Use the correct format:*\n\n_Song Name|Artist Name_\nExample: `.lyrics Shape of You|Ed Sheeran`');
       }
 
       const [title, artist] = text.split('|').map(part => part.trim());
 
       if (!title || !artist) {
-        return m.reply('Both song name and artist name are required. Please provide them in the format: song name|artist name.');
+        return m.reply('❗ *Both song and artist name are required.*\nExample: `.lyrics Believer|Imagine Dragons`');
       }
 
       const apiUrl = `https://api.lyrics.ovh/v1/${encodeURIComponent(artist)}/${encodeURIComponent(title)}`;
@@ -34,10 +38,11 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
       if (result && result.lyrics) {
         const lyrics = result.lyrics;
 
-        let buttons = [{
+        let buttons = [
+          {
             name: "cta_copy",
             buttonParamsJson: JSON.stringify({
-              display_text: "📋 ᴄᴏᴘʏ ʟʏʀɪᴄs",
+              display_text: "📋 Copy Lyrics",
               id: "copy_code",
               copy_code: lyrics
             })
@@ -45,14 +50,14 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
           {
             name: "cta_url",
             buttonParamsJson: JSON.stringify({
-              display_text: "SHOW 💜 FOR ROMEK-XD",
-              url: `https://whatsapp.com/channel/0029VakaPzeD38CV78dbGf0e`
+              display_text: "Support Romek-XD",
+              url: `https://whatsapp.com/channel/0029Vaj1hl1Lo4hksSXY0U2t`
             })
           },
           {
             name: "quick_reply",
             buttonParamsJson: JSON.stringify({
-              display_text: "ᴍᴀɪɴ ᴍᴇɴᴜ",
+              display_text: "Main Menu",
               id: ".menu"
             })
           }
@@ -66,12 +71,8 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
                 deviceListMetadataVersion: 2
               },
               interactiveMessage: proto.Message.InteractiveMessage.create({
-                body: proto.Message.InteractiveMessage.Body.create({
-                  text: lyrics
-                }),
-                footer: proto.Message.InteractiveMessage.Footer.create({
-                  text: "> *©𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 🐼𝐑𝐎𝐌𝐄𝐊 𝐗𝐃🐠"
-                }),
+                body: proto.Message.InteractiveMessage.Body.create({ text: lyrics }),
+                footer: proto.Message.InteractiveMessage.Footer.create({ text: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴍᴇᴋ-xᴅ" }),
                 header: proto.Message.InteractiveMessage.Header.create({
                   title: "",
                   subtitle: "",
@@ -91,11 +92,11 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
 
         await m.React('✅');
       } else {
-        throw new Error('Invalid response from the Lyrics API.');
+        throw new Error('No lyrics found.');
       }
     } catch (error) {
       console.error('Error getting lyrics:', error.message);
-      m.reply('Error getting lyrics.');
+      m.reply('❌ *An error occurred while fetching lyrics.*');
       await m.React('❌');
     }
   }

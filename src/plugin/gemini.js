@@ -1,11 +1,11 @@
 import axios from 'axios';
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import config from '../../config.cjs';
+import config from '../config.cjs';
 
 const geminiResponse = async (m, Matrix) => {
   const prefix = config.PREFIX;
-const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-const text = m.body.slice(prefix.length + cmd.length).trim();
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+  const text = m.body.slice(prefix.length + cmd.length).trim();
 
   const apiKey = config.GEMINI_KEY;
   const genAI = new GoogleGenerativeAI(apiKey);
@@ -13,10 +13,10 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
 
   if (validCommands.includes(cmd)) {
     if (!m.quoted || m.quoted.mtype !== 'imageMessage') {
-      return m.reply(`*Send/Reply with an Image ${prefix + cmd}*`);
+      return m.reply(`⚠️ *Send/Reply with an Image to use* \`${prefix + cmd}\``);
     }
-    
-    m.reply("Please wait...");
+
+    await m.reply("⏳ *Processing with Gemini Vision AI...*");
 
     try {
       const prompt = text;
@@ -34,11 +34,15 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
       const response = result.response;
 
       const textResponse = await response.text();
-      m.reply(`${textResponse}`);
+
+      return m.reply(
+        `┌─〔 *GEMINI VISION RESULT* 〕─◉\n\n${textResponse.trim()}\n\n📥 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴍᴇᴋ-xᴅ`
+      );
+
     } catch (error) {
       console.error('Error in Gemini Pro Vision:', error);
-      m.reply(`An error occurred: ${error.message}`);
       await m.React("❌");
+      return m.reply(`❌ *An error occurred while generating response:*\n${error.message}`);
     }
   }
 };

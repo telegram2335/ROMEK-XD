@@ -1,80 +1,83 @@
 import axios from 'axios';
-import config from '../../config.cjs';
+import config from '../config.cjs';
 
 const githubStalk = async (m, gss) => {
   try {
     const prefix = config.PREFIX;
-const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-const text = m.body.slice(prefix.length + cmd.length).trim();
+    const cmd = m.body.startsWith(prefix)
+      ? m.body.slice(prefix.length).split(' ')[0].toLowerCase()
+      : '';
+    const text = m.body.slice(prefix.length + cmd.length).trim();
     const args = text.split(' ');
 
     const validCommands = ['githubstalk', 'ghstalk'];
 
-   if (validCommands.includes(cmd)) {
-      if (!args[0]) return m.reply('Mention a GitHub username to stalk.');
+    if (validCommands.includes(cmd)) {
+      if (!args[0]) return m.reply('❌ Please provide a GitHub username to stalk.');
 
       const username = args[0];
+      await m.React('⏳');
 
       try {
-        // Fetch GitHub user data using Axios
-        const githubResponse = await axios.get(`https://api.github.com/users/${username}`);
-        const userData = githubResponse.data;
+        const { data: userData, status } = await axios.get(`https://api.github.com/users/${username}`);
+        if (status !== 200) return m.reply(`❌ GitHub user not found.`);
 
-        if (githubResponse.status !== 200) {
-          return m.reply(`❌ GitHub user not found.`);
-        }
+        let response = `👨‍💻 *GitHub Profile: @${userData.login}*\n\n`;
+        response += `  ◦ *Name*: ${userData.name || 'N/A'}\n`;
+        response += `  ◦ *Username*: @${userData.login}\n`;
+        response += `  ◦ *Bio*: ${userData.bio || 'N/A'}\n`;
+        response += `  ◦ *ID*: ${userData.id}\n`;
+        response += `  ◦ *Node ID*: ${userData.node_id}\n`;
+        response += `  ◦ *Avatar*: ${userData.avatar_url}\n`;
+        response += `  ◦ *Profile Link*: ${userData.html_url}\n`;
+        response += `  ◦ *Type*: ${userData.type}\n`;
+        response += `  ◦ *Admin*: ${userData.site_admin ? 'Yes' : 'No'}\n`;
+        response += `  ◦ *Company*: ${userData.company || 'N/A'}\n`;
+        response += `  ◦ *Blog*: ${userData.blog || 'N/A'}\n`;
+        response += `  ◦ *Location*: ${userData.location || 'N/A'}\n`;
+        response += `  ◦ *Email*: ${userData.email || 'N/A'}\n`;
+        response += `  ◦ *Public Repos*: ${userData.public_repos}\n`;
+        response += `  ◦ *Public Gists*: ${userData.public_gists}\n`;
+        response += `  ◦ *Followers*: ${userData.followers}\n`;
+        response += `  ◦ *Following*: ${userData.following}\n`;
+        response += `  ◦ *Created At*: ${userData.created_at}\n`;
+        response += `  ◦ *Last Updated*: ${userData.updated_at}`;
 
-        // Construct the response message
-        let responseMessage = `🌟 *GitHub Profile - @${userData.login}*\n\n`;
-        responseMessage += `  ◦  *Name*: ${userData.name || 'N/A'}\n`;
-        responseMessage += `  ◦  *Username*: @${userData.login}\n`;
-        responseMessage += `  ◦  *Bio*: ${userData.bio || 'N/A'}\n`;
-        responseMessage += `  ◦  *ID*: ${userData.id}\n`;
-        responseMessage += `  ◦  *Node ID*: ${userData.node_id}\n`;
-        responseMessage += `  ◦  *Profile URL*: ${userData.avatar_url}\n`;
-        responseMessage += `  ◦  *GitHub URL*: ${userData.html_url}\n`;
-        responseMessage += `  ◦  *Type*: ${userData.type}\n`;
-        responseMessage += `  ◦  *Admin*: ${userData.site_admin ? 'Yes' : 'No'}\n`;
-        responseMessage += `  ◦  *Company*: ${userData.company || 'N/A'}\n`;
-        responseMessage += `  ◦  *Blog*: ${userData.blog || 'N/A'}\n`;
-        responseMessage += `  ◦  *Location*: ${userData.location || 'N/A'}\n`;
-        responseMessage += `  ◦  *Email*: ${userData.email || 'N/A'}\n`;
-        responseMessage += `  ◦  *Public Repositories*: ${userData.public_repos}\n`;
-        responseMessage += `  ◦  *Public Gists*: ${userData.public_gists}\n`;
-        responseMessage += `  ◦  *Followers*: ${userData.followers}\n`;
-        responseMessage += `  ◦  *Following*: ${userData.following}\n`;
-        responseMessage += `  ◦  *Created At*: ${userData.created_at}\n`;
-        responseMessage += `  ◦  *Updated At*: ${userData.updated_at}\n`;
-
-        const githubReposResponse = await axios.get(`https://api.github.com/users/${username}/repos?per_page=5&sort=stargazers_count&direction=desc`);
-        const reposData = githubReposResponse.data;
+        const { data: reposData } = await axios.get(
+          `https://api.github.com/users/${username}/repos?per_page=5&sort=stargazers_count&direction=desc`
+        );
 
         if (reposData.length > 0) {
-          const topRepos = reposData.slice(0, 5); // Display the top 5 starred repositories
-
-          const reposList = topRepos.map(repo => {
-            return `  ◦  *Repository*: [${repo.name}](${repo.html_url})
-  ◦  *Description*: ${repo.description || 'N/A'}
-  ◦  *Stars*: ${repo.stargazers_count}
-  ◦  *Forks*: ${repo.forks}`;
-          });
-
-          const reposCaption = `📚 *Top Starred Repositories*\n\n${reposList.join('\n\n')}`;
-          responseMessage += `\n\n${reposCaption}`;
+          const repos = reposData.map(repo => (
+            `\n\n🔹 *${repo.name}*\n` +
+            `  ◦ 📄 Description: ${repo.description || 'N/A'}\n` +
+            `  ◦ ⭐ Stars: ${repo.stargazers_count}\n` +
+            `  ◦ 🍴 Forks: ${repo.forks}\n` +
+            `  ◦ 🔗 [View Repo](${repo.html_url})`
+          ));
+          response += `\n\n📚 *Top Repositories*${repos.join('')}`;
         } else {
-          responseMessage += `\n\nNo public repositories found.`;
+          response += `\n\n📂 No public repositories found.`;
         }
 
-        // Send the message with the updated caption and user's avatar
-        await gss.sendMessage(m.from, { image: { url: userData.avatar_url }, caption: responseMessage }, { quoted: m });
+        response += `\n\n📡 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴍᴇᴋ-xᴅ`;
+
+        await gss.sendMessage(
+          m.from,
+          { image: { url: userData.avatar_url }, caption: response },
+          { quoted: m }
+        );
+
+        await m.React('✅');
       } catch (error) {
-        console.error('Error fetching GitHub data:', error);
-        await gss.sendMessage(m.from, 'An error occurred while fetching GitHub data.', { quoted: m });
+        console.error('GitHub API error:', error);
+        await m.React('❌');
+        await gss.sendMessage(m.from, { text: '❌ Error fetching GitHub data.' }, { quoted: m });
       }
     }
-  } catch (error) {
-    console.error('Error processing the command:', error);
-    m.reply('An error occurred while processing the command.');
+  } catch (err) {
+    console.error('Command error:', err);
+    m.reply('❌ Error processing command.');
   }
 };
 
