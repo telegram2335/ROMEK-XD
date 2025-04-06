@@ -94,10 +94,28 @@ async function start() {
                     start();
                 }
             } else if (connection === 'open') {
-                if (initialConnection) {
-                    console.log(chalk.green("😃ROMEK-XD-CONNECTED Successful️✅ JOIN FOR MORE UPDATE🥏 https://whatsapp.com/channel/0029VakaPzeD38CV78dbGf0e"));
-                    Matrix.sendMessage(Matrix.user.id, { text: `😃ROMEK-XD-CONNECTED Successful️✅ JOIN FOR MORE UPDATE🥏 https://whatsapp.com/channel/0029VakaPzeD38CV78dbGf0e` });
-                    initialConnection = false;
+  if (initialConnection) {
+    console.log(chalk.green("✅ Connected Successfully to Romek-XD"));
+
+    Matrix.sendMessage(Matrix.user.id, {
+      image: { url: "https://files.catbox.moe/l1g01a.jpg" },
+      caption: `╭───❍ *Welcome to Romek-XD* ❍───╮
+
+Hello *${config.BOT_NAME}* User 👋  
+> _Simple, Sleek & Powerful WhatsApp Bot._
+
+✨ Loaded with premium features and crafted for smooth automation.
+
+╭────❍ *Details:* ❍────
+├➤ *Prefix:* \`${prefix}\`
+├➤ *Channel:* https://whatsapp.com/channel/0029VakaPzeD38CV78dbGf0e
+├➤ *GitHub:* https://github.com/ROMEKTRICKS/ROMEK-XD
+╰──────────────────────
+
+*Thanks for choosing ROMEK-XD!*  
+_©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴍᴇᴋ-xᴅ_`
+            });
+            initialConnection = false;
                 } else {
                     console.log(chalk.blue("♻️ Connection reestablished after restart."));
                 }
